@@ -487,3 +487,25 @@ function maxOfThree(num1, num2, num3) {
 
 console.log(maxOfThree(6, 9, 1));
 console.log("===========================================================");
+
+/**
+ * H. printLongestWord
+Write a function printLongestWord that accepts a single argument, an array of strings. 
+The method should return the longest word in the array. 
+In case of a tie, the method should return the word that appears first in the array.
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+=> "Peanutbutter"
+ */
+
+function printLongestWord(arrayOfWords) {
+    let longestWord = "";
+  for (let i = 0; i < arrayOfWords.length; i++) {
+    if (arrayOfWords[i].length > longestWord.length) {
+      longestWord = arrayOfWords[i];
+    }
+  }
+  return longestWord;
+}
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+console.log("===========================================================");

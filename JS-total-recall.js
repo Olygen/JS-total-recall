@@ -544,13 +544,40 @@ Our user has had a birthday!
 Without changing the original userobject, increment the agevalue using the postfix operator. Hint: age++
  */
 
-function updateEmailAge(user, newEmail) {
+/**
+ * C. Adding keys and values
+You have decided to add your user's location to the data that you want to collect.
+
+Without changing the original userobject, 
+add a new key location to the object, and give it a value or some-or-other location (a string).
+ */
+
+ function updateUser(user, newEmail, location) {
     const newUser = { ...user };
     newUser.email = newEmail;
     newUser.age++;
+    newUser.location = location;
     return newUser;
   }
 
-const newUser = updateEmailAge(user, "johndoe2@yahoo.com");
-console.log(newUser.email, newUser.age);
+const newUser = updateUser(user, "johndoe2@yahoo.com", "New York");
+console.log(newUser.email, newUser.age, newUser.location);
+console.log("===========================================================");
+
+/**
+ * D. Shopaholic!
+Our user has purchased an item! They have purchased some "carbohydrates". 
+Using .push(), add the string "carbohydrates" to the purchasedarray.
+Our user has purchased an item! They have purchased some "peace of mind". 
+Using .push(), add the string "peace of mind" to the purchasedarray.
+Our user has purchased an item! They have purchased some "Merino jodhpurs". 
+Using .push(), add the string "Merino jodhpurs" to the purchasedarray.
+Console.log just the "Merino jodhpurs" from the purchasedarray.
+ */
+
+user.purchased.push("carbohydrates");
+user.purchased.push("peace of mind");
+user.purchased.push("Merino jodhpurs");
+
+console.log(user.purchased[2]);
 console.log("===========================================================");

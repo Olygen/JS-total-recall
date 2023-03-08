@@ -439,7 +439,11 @@ console.log("===========================================================");
  * E. getTwoLengths
 Write a function getTwoLengths that accepts two parameters (strings). 
 The function should return an array of numbers where each number is the length of the corresponding string.
+ */
+
+function getTwoLengths(str1, str2) {
+    const length = [str1.length, str2.length]; 
+    return length;
+}
 
 console.log(getTwoLengths("Hank", "Hippopopalous"));
-=> [4, 13]
- */

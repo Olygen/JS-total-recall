@@ -509,3 +509,48 @@ function printLongestWord(arrayOfWords) {
 }
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 console.log("===========================================================");
+
+/**
+ * ++++++++++++++++++++++++++++++++++++  Objects  +++++++++++++++++++++++++++++++
+ * 
+ * Let's set up an object data structure. Let's say we have a website that sells products, 
+ * and we have a user of our website, and we want to store that user's data. 
+ * The object data structure is a good way to organize the data from our user.
+
+A. Make a user object
+Create an object called user.
+Write in to the object the key-value pairs for name, email, age, and purchased. 
+Set the value of purchased to an empty array []. Set the other values to whatever you would like.
+ */
+
+const user = {
+    name: "John Doe",
+    email: "johndoe@example.com",
+    age: 30,
+    purchased: []
+  };
+
+console.log(user.name); 
+console.log(user.email); 
+console.log(user.age); 
+console.log(user.purchased); 
+console.log("===========================================================");
+
+/**
+ * B. Update the user
+Our user has changed his or her email address. 
+Without changing the original userobject, update the email value to a new email address.
+Our user has had a birthday! 
+Without changing the original userobject, increment the agevalue using the postfix operator. Hint: age++
+ */
+
+function updateEmailAge(user, newEmail) {
+    const newUser = { ...user };
+    newUser.email = newEmail;
+    newUser.age++;
+    return newUser;
+  }
+
+const newUser = updateEmailAge(user, "johndoe2@yahoo.com");
+console.log(newUser.email, newUser.age);
+console.log("===========================================================");

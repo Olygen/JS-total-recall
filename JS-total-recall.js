@@ -581,3 +581,44 @@ user.purchased.push("Merino jodhpurs");
 
 console.log(user.purchased[2]);
 console.log("===========================================================");
+
+/**
+ * E. Object-within-object
+Remember that you can add an object to an existing object in the same way that you can add any new property/value pair.
+
+If we want to give our user a friendwith a name and age, we could write:
+
+user.friend = {
+    name: "Grace Hopper",
+    age: 85
+}
+When we console.log user, we would see the friend object added to our user object.
+
+Write a friend object into your user object and give the friend a name, age, location, and purchased array (empty for now)
+Console.log just the friend's name
+Console.log just the friend's location
+CHANGE the friend's age to 55
+The friendhas purchased "The One Ring". Use .push()to add "The One Ring" to the friend's purchased array.
+The friendhas purchased "A latte". Use .push()to add "A latte" to the friend's purchased array.
+Console.log just "A latte" from the friend's purchased array.
+
+ */
+
+user.friend = {
+    name: "Grace Hopper",
+    age: 85,
+    location: "Boston",
+    purchased: []
+  }
+
+  console.log(user.friend.name); 
+  console.log(user.friend.location); 
+
+  user.friend.age = 55;
+
+user.friend.purchased.push("The One Ring");
+user.friend.purchased.push("A latte");
+
+console.log(user.friend.purchased[1]);
+console.log("===========================================================");
+  

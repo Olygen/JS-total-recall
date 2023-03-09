@@ -15,7 +15,7 @@ let q = 5;    //  declare and assigna variable
 q = 10; // change the value of a variable
 let x = q; //assign an existing variable to a new variable
 console.log(q+x);
-console.log("===========================================================");
+console.log("=========================================================== Variables & Datatypes: A done");
 
 /**
  * B. Strings
@@ -45,7 +45,7 @@ let yourName = 'Olga';
 // console.log(`Hello, my name is ${yourName}`)
 let expression = 'Hello, my name is ' + yourName
 console.log(expression);
-console.log("===========================================================");
+console.log("=========================================================== B done");
 
 /**
  * C. Booleans
@@ -72,7 +72,7 @@ console.log(e && 'Kevin');
 console.log(a + b === c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
 console.log(a * a === d); // note: the answer is a simple arithmetic equation, not something "weird"
 console.log(48 == '48');
-console.log("===========================================================");
+console.log("=========================================================== C done");
 
 /**
  * D. The farm
@@ -87,7 +87,7 @@ animal = 'sheep';
 if (animal === 'cow') {
     console.log('mooooo');
 } else {console.log("Hey! You're not a cow.")}
-console.log("===========================================================");
+console.log("=========================================================== D done");
 
 
 /**
@@ -106,7 +106,7 @@ if (age > 16) {
     console.log("Sorry, you're too young.!");
 }
 age = 5;
-console.log("===========================================================");
+console.log("=========================================================== E done");
 
 /** II. Loops
  * 
@@ -125,7 +125,7 @@ Write a loop that will print out every third number starting with 12 and going n
 for ( let i = 12; i <=40; i+=3) {
     console.log(i);
 }
-console.log("===========================================================");
+console.log("=========================================================== LOOPS: A done");
 
 /**
  * B. Get even
@@ -140,7 +140,7 @@ for ( let i = 1; i <= 10; i++) {
     console.log(i)
 }
 }
-console.log("======sorry, 100 is too long, I checked - it works same way :)=========");
+console.log("======sorry, 100 is too long, I checked - it works same way :)========= B done");
 
 /**
  * C. Give me Five
@@ -158,7 +158,7 @@ for ( let i = 1; i <= 100; i++) {
         console.log(`I found a ${i}. Three is a crowd`);
     }
 }
-console.log("===========================================================");
+console.log("=========================================================== C done");
 
 /**
  * D. Savings account
@@ -182,7 +182,7 @@ for (i = 1; i <= 100; i ++) {
 }
 bonus = bonus * 2;
 console.log('$' + bonus);
-console.log("===========================================================");
+console.log("=========================================================== D done");
 
 /**
  * III. Arrays & Control flow
@@ -199,7 +199,7 @@ Create an array that contains three quotes and store it in a variable called quo
 
 const quotes = ['Hit the road, Jack', 'Tired with all this for restful death I cry', 'Be the change you wish to see in the world'];
 console.log(quotes);
-console.log("===========================================================");
+console.log("=========================================================== Arrays & Control flow: A & B done");
 
 /**
  * C. Accessing elements
@@ -215,7 +215,7 @@ const randomThings = [1, 10, "Hello", true];
 const firstElement = randomThings[0];
 randomThings[2] = 'World';
 console.log(randomThings);
-console.log("===========================================================");
+console.log("=========================================================== C done");
 
 /**
  * D. Change values
@@ -231,7 +231,7 @@ const thirdElement = ourClass[2]; //access the 3rd element of the array
 ourClass[4] = "Octocat";
 ourClass.push("Cloud City");
 console.log(ourClass);
-console.log("===========================================================");
+console.log("=========================================================== D done");
 
 /**
  * E. Mix It Up
@@ -262,7 +262,7 @@ console.log(myArray);
 // Reverse this array using Array.prototype.reverse().
 myArray.reverse();
 console.log(myArray);
-console.log("===========================================================");
+console.log("=========================================================== E done");
 
 /**
  * F. Biggie Smalls
@@ -281,7 +281,7 @@ if (integer < 100) {
   } else {
     console.log("big number");
   }
-  console.log("===========================================================");
+  console.log("=========================================================== F done");
 
   /**
    * G. Monkey in the Middle
@@ -301,7 +301,7 @@ if (number < 5) {
 } else {
   console.log("monkey");
 }
-console.log("===========================================================");
+console.log("=========================================================== G done");
 
 /**
  * H. What's in Your Closet?
@@ -367,7 +367,7 @@ console.log("Thom is looking fierce in a " + thomsCloset[0][0] + ', ' + thomsClo
 //* Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
 thomsCloset[1][2] = "Footie Pajamas"
 console.log(thomsCloset[1]);
-console.log("===========================================================");
+console.log("=========================================================== H done");
 
 /**
  * IV. Functions
@@ -391,7 +391,7 @@ function printGreeting(nameInput) {
     return "Hello there, " + nameInput + "!";
 }
 console.log(printGreeting("Slimer"));
-console.log("===========================================================");
+console.log("=========================================================== Functions: A done");
 
 /**
  * B. printCool
@@ -406,7 +406,7 @@ function printCool(name) {
     return "Captain " + name + " is cool";
 }
 console.log(printCool("Reynolds"));
-console.log("===========================================================");
+console.log("=========================================================== B done");
 
 // C. calculateCube
 // Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.
@@ -417,7 +417,7 @@ function calculateCube(num) {
   }
   
 console.log(calculateCube(5));
-console.log("===========================================================");
+console.log("=========================================================== C done");
 
 // D. isVowel
 // Write a function isVowel that takes a character 
@@ -433,7 +433,7 @@ function isVowel(char) {
 }
 
 console.log(isVowel("E"));
-console.log("===========================================================");
+console.log("=========================================================== D done");
 
 /**
  * E. getTwoLengths
@@ -447,7 +447,7 @@ function getTwoLengths(str1, str2) {
 }
 
 console.log(getTwoLengths("Hank", "Hippopopalous"));
-console.log("===========================================================");
+console.log("=========================================================== E done");
 
 /** 
  * F. getMultipleLengths
@@ -468,7 +468,7 @@ function getMultipleLengths(arrayOfStrings) {
     return arrayOfLength;
 }
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
-console.log("===========================================================");
+console.log("=========================================================== F done");
 
 /**
  * G. maxOfThree
@@ -486,7 +486,7 @@ function maxOfThree(num1, num2, num3) {
 }
 
 console.log(maxOfThree(6, 9, 1));
-console.log("===========================================================");
+console.log("=========================================================== G done");
 
 /**
  * H. printLongestWord
@@ -508,7 +508,7 @@ function printLongestWord(arrayOfWords) {
   return longestWord;
 }
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
-console.log("===========================================================");
+console.log("=========================================================== H done");
 
 /**
  * ++++++++++++++++++++++++++++++++++++  Objects  +++++++++++++++++++++++++++++++
@@ -534,7 +534,7 @@ console.log(user.name);
 console.log(user.email); 
 console.log(user.age); 
 console.log(user.purchased); 
-console.log("===========================================================");
+console.log("=========================================================== OBJECTS: A done");
 
 /**
  * B. Update the user
@@ -548,11 +548,10 @@ Without changing the original userobject, increment the agevalue using the postf
  * C. Adding keys and values
 You have decided to add your user's location to the data that you want to collect.
 
-Without changing the original userobject, 
+Without changing the original user object, 
 add a new key location to the object, and give it a value or some-or-other location (a string).
  */
-
- function updateUser(user, newEmail, location) {
+function updateUser(user, newEmail, location) {
     const newUser = { ...user };
     newUser.email = newEmail;
     newUser.age++;
@@ -562,7 +561,33 @@ add a new key location to the object, and give it a value or some-or-other locat
 
 const newUser = updateUser(user, "johndoe2@yahoo.com", "New York");
 console.log(newUser.email, newUser.age, newUser.location);
-console.log("===========================================================");
+console.log("=========================================================== B&C done ");
+
+/**
+ * G. Functions can operate on objects
+Write a single function updateUser that takes no parameters. When the function is run, it should:
+increment the user's age by 1
+make the user's name uppercase
+The function does not need a return statement, it will merely modify the user object.
+*/
+function updateUser1() {
+    user.age++;
+    user.name = user.name.toUpperCase();
+  }
+
+/** Write a function oldAndLoud that performs the exact same tasks as updateUser, 
+but instead of hard-coding it to only work on our user object, 
+make it take a parameter person, and have it modify the object that is passed 
+in as an argument when the function is called. Call your oldAndLoud function with user as the argument.
+ */
+function oldAndLoud(person) {
+    person.age++;
+    person.name = person.name.toUpperCase();
+  }
+  
+oldAndLoud(user);
+console.log(user);
+console.log("=========================================================== G done here");
 
 /**
  * D. Shopaholic!
@@ -580,7 +605,7 @@ user.purchased.push("peace of mind");
 user.purchased.push("Merino jodhpurs");
 
 console.log(user.purchased[2]);
-console.log("===========================================================");
+console.log("=========================================================== D done");
 
 /**
  * E. Object-within-object
@@ -620,7 +645,7 @@ user.friend.purchased.push("The One Ring");
 user.friend.purchased.push("A latte");
 
 console.log(user.friend.purchased[1]);
-console.log("===========================================================");
+console.log("=========================================================== E done");
 
 /**
  * F. Loops
@@ -638,4 +663,5 @@ console.log(`${user.friend.name} purchased: `)
 for (i = 0; i < user.friend.purchased.length; i++) {
     console.log(`         ${user.friend.purchased[i]}`);
 }
-console.log("===========================================================");
+console.log("=========================================================== F done");
+

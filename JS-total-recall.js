@@ -621,4 +621,21 @@ user.friend.purchased.push("A latte");
 
 console.log(user.friend.purchased[1]);
 console.log("===========================================================");
-  
+
+/**
+ * F. Loops
+Write a for loop that iterates over the User's purchased array (NOT the friend's purchased array), 
+and prints each element to the console.
+Write a for loop that iterates over the Friend's purchased array, and prints each element to the console.
+ */
+console.log(`${user.name} purchased: `)  
+
+for ( i = 0; i < user.purchased.length; i ++) {
+    console.log(`         ${user.purchased[i]}`);
+}
+
+console.log(`${user.friend.name} purchased: `)  
+for (i = 0; i < user.friend.purchased.length; i++) {
+    console.log(`         ${user.friend.purchased[i]}`);
+}
+console.log("===========================================================");
